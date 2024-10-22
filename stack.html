@@ -765,8 +765,6 @@ int main() {
     using namespace std;
     #include &lt;bits/stdc++.h&gt; 
     // -------------------------------------------------Stack using Queue-------------------------------------
-    // Steps 1. push(x)  push x into queue2 2.Pop all elements of queue1 and push into queue2 (pop and push one by one)
-    // swap q1 and q2  
     class Stack {
         // Two inbuilt queues
         queue&lt;int&gt;  q1, q2;
@@ -775,11 +773,11 @@ int main() {
         void push(int x)
         {
             
-            q2.push(x);                        // stack me jo value push krni ha wo dal deni ha
+            q2.push(x);                       
             
-            while (!q1.empty()) {             // jb tk queue 1 empty ni ho jati q2 me queue 1 ki values push krty jana ha
+            while (!q1.empty()) {             
                 q2.push(q1.front());         
-                q1.pop();                     // queue front values nikal kr q2 me push krty jana ha
+                q1.pop();                     
             }
         
             
