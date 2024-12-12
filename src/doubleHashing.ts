@@ -1,4 +1,4 @@
-const loadFactorOfDH = 0.75; // Load factor for calculating table size
+const loadFactorOfDH = 0.7; // Load factor for calculating table size
 let userNumbersOfDH: number[] = []; // Array to store user inputs
 let hashTableOfDH: number[][] = []; // The hash table
 const insertButtonDH = document.createElement('button');
